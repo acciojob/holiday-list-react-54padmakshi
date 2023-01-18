@@ -37,11 +37,11 @@ const App = () => {
   return (
     <div id="main">
                {/* Do not remove the main div */}
-               <ol>
+               <ol id="location">
                    {cityList?.map( (name,index)=>{
                       if(cityList.country === "India")
                       {
-                        return <li key={cityList.name + index}> {cityList.name} </li>
+                        return <li key={cityList.name + index+1}> {cityList.name} </li>
                       }
                    })}
                </ol>
