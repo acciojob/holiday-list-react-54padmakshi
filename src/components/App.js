@@ -38,10 +38,10 @@ const App = () => {
     <div id="main">
                {/* Do not remove the main div */}
                <ol id="location">
-                   {cityList?.map( (name,index)=>{
-                      if(cityList.country === "India")
+                   {cityList?.map( (e,index)=>{
+                      if(e.country === "India")
                       {
-                        return <li key={cityList.name + index+1}> {cityList.name} </li>
+                        return <li key={e.name + index+1}> {e.name} </li>
                       }
                    })}
                </ol>
